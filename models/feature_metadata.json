@@ -1,0 +1,83 @@
+{
+  "core_features": [
+    "login_hour",
+    "failed_attempts",
+    "session_duration",
+    "device_change_indicator",
+    "location_change_indicator"
+  ],
+  "aux_features": [
+    "ip_reputation_score",
+    "is_weekend"
+  ],
+  "all_features": [
+    "login_hour",
+    "failed_attempts",
+    "session_duration",
+    "device_change_indicator",
+    "location_change_indicator",
+    "ip_reputation_score",
+    "is_weekend"
+  ],
+  "numerical_features": [
+    "login_hour",
+    "failed_attempts",
+    "session_duration",
+    "ip_reputation_score"
+  ],
+  "binary_features": [
+    "device_change_indicator",
+    "location_change_indicator",
+    "is_weekend"
+  ],
+  "target": "is_suspicious",
+  "train_samples": 4000,
+  "test_samples": 1000,
+  "class_distribution_train": {
+    "routine": 3280,
+    "suspicious": 720
+  },
+  "feature_ranges": {
+    "login_hour": {
+      "min": 0,
+      "max": 23,
+      "default": 14
+    },
+    "failed_attempts": {
+      "min": 0,
+      "max": 15,
+      "default": 0
+    },
+    "session_duration": {
+      "min": 0.1,
+      "max": 480.0,
+      "default": 30.0
+    },
+    "device_change_indicator": {
+      "options": [
+        0,
+        1
+      ],
+      "default": 0
+    },
+    "location_change_indicator": {
+      "options": [
+        0,
+        1
+      ],
+      "default": 0
+    },
+    "ip_reputation_score": {
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.05
+    },
+    "is_weekend": {
+      "options": [
+        0,
+        1
+      ],
+      "default": 0
+    }
+  }
+}

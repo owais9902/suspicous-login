@@ -1,0 +1,20 @@
+{
+  "total_samples": 5000,
+  "correlations_with_target": {
+    "login_hour": -0.5222,
+    "failed_attempts": 0.8387,
+    "session_duration": 0.1691,
+    "device_change_indicator": 0.6258,
+    "location_change_indicator": 0.719,
+    "ip_reputation_score": 0.9386,
+    "is_weekend": 0.1465
+  },
+  "mean_failed_attempts": {
+    "routine": 0.17,
+    "suspicious": 5.24
+  },
+  "median_session_duration": {
+    "routine": 24.3,
+    "suspicious": 2.8
+  }
+}

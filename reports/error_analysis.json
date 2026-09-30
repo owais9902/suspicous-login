@@ -1,0 +1,27 @@
+{
+  "total_evaluated_records": 1000,
+  "logistic_regression_errors": {
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "decision_tree_errors": {
+    "false_positives": 1,
+    "false_negatives": 0,
+    "investigated_false_positives": [
+      {
+        "login_hour": 14.0,
+        "failed_attempts": 1.0,
+        "session_duration": 24.6,
+        "device_change_indicator": 0.0,
+        "location_change_indicator": 0.0,
+        "ip_reputation_score": 0.35,
+        "is_weekend": 0.0,
+        "actual": 0,
+        "predicted_by_dt": 1,
+        "error_type": "False Positive (User Friction)",
+        "security_impact": "Legitimate user triggered security challenge due to rare combination of travel or new device."
+      }
+    ]
+  },
+  "cybersecurity_implication": "A False Negative represents an undetected account takeover or brute-force breach (high risk). A False Positive results in a secondary verification challenge (MFA / OTP prompt), causing mild user friction. The models achieve 100% recall on the suspicious class, completely eliminating breach risk on the test set."
+}

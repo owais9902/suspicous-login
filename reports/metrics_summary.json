@@ -1,0 +1,70 @@
+{
+  "Logistic Regression": {
+    "cv_roc_auc": 1.0,
+    "cv_f1_score": 0.9993,
+    "test_accuracy": 1.0,
+    "test_precision": 1.0,
+    "test_recall": 1.0,
+    "test_f1_score": 1.0,
+    "test_roc_auc": 1.0,
+    "test_specificity": 1.0,
+    "test_log_loss": 0.002,
+    "confusion_matrix": {
+      "true_negatives_routine": 820,
+      "false_positives_friction": 0,
+      "false_negatives_breach": 0,
+      "true_positives_detected": 180
+    }
+  },
+  "K-Nearest Neighbors": {
+    "cv_roc_auc": 1.0,
+    "cv_f1_score": 0.9993,
+    "test_accuracy": 1.0,
+    "test_precision": 1.0,
+    "test_recall": 1.0,
+    "test_f1_score": 1.0,
+    "test_roc_auc": 1.0,
+    "test_specificity": 1.0,
+    "test_log_loss": 0.0,
+    "confusion_matrix": {
+      "true_negatives_routine": 820,
+      "false_positives_friction": 0,
+      "false_negatives_breach": 0,
+      "true_positives_detected": 180
+    }
+  },
+  "Decision Tree": {
+    "cv_roc_auc": 0.9998,
+    "cv_f1_score": 0.9993,
+    "test_accuracy": 0.999,
+    "test_precision": 0.9945,
+    "test_recall": 1.0,
+    "test_f1_score": 0.9972,
+    "test_roc_auc": 1.0,
+    "test_specificity": 0.9988,
+    "test_log_loss": 0.0036,
+    "confusion_matrix": {
+      "true_negatives_routine": 819,
+      "false_positives_friction": 1,
+      "false_negatives_breach": 0,
+      "true_positives_detected": 180
+    }
+  },
+  "Random Forest (Baseline)": {
+    "cv_roc_auc": 1.0,
+    "cv_f1_score": 0.9993,
+    "test_accuracy": 1.0,
+    "test_precision": 1.0,
+    "test_recall": 1.0,
+    "test_f1_score": 1.0,
+    "test_roc_auc": 1.0,
+    "test_specificity": 1.0,
+    "test_log_loss": 0.0018,
+    "confusion_matrix": {
+      "true_negatives_routine": 820,
+      "false_positives_friction": 0,
+      "false_negatives_breach": 0,
+      "true_positives_detected": 180
+    }
+  }
+}
